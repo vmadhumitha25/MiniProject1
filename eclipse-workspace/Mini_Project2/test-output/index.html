@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\madhu\eclipse-workspace\Mini_Project2\testng1.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">42 methods, 7 failed,   35 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="LogoutwithoutLogin">LogoutwithoutLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactAddTest" class="method navigator-link" hash-for-method="testAddContact(Bharathi, Magesh, 1995-05-28, bharathu@gmail.com, 9546218596, 1540 S Stratford Rd, Winston-Salem, SF...)">testAddContact(Bharathi, Magesh, 1995-05-28, bharathu@gmail.com, 9546218596, 1540 S Stratford Rd, Winston-Salem, SF...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactAddTest" class="method navigator-link" hash-for-method="testAddContact(Guvi, Test, 1995-05-30, mokthi@gmail.com, 1548896285, 485 R Vivi 59, TVT Road, NT, Onida, 845962, Ma...)">testAddContact(Guvi, Test, 1995-05-30, mokthi@gmail.com, 1548896285, 485 R Vivi 59, TVT Road, NT, Onida, 845962, Ma...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDeleteTest" class="method navigator-link" hash-for-method="testCancelDeleteContact">testCancelDeleteContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactEditTest" class="method navigator-link" hash-for-method="testEditContact(Ragini, Dass, ragini@gmail.com, 8549657452, 1993/02/02, Success)">testEditContact(Ragini, Dass, ragini@gmail.com, 8549657452, 1993/02/02, Success)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDeleteTest" class="method navigator-link" hash-for-method="testOtherContactsUnaffected">testOtherContactsUnaffected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDisplayTest" class="method navigator-link" hash-for-method="viewAndVerifyContactList">viewAndVerifyContactList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="backButtonAfterLogout">backButtonAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="logoutBtnVisible">logoutBtnVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="refreshAfterLogout">refreshAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactAddTest" class="method navigator-link" hash-for-method="testAddContact(Test, User, 1995-05-29, test@invalid_email, 5698742685, 9528 25 Hwy, 9528 25 Hwy, Austin, Ontario, 	...)">testAddContact(Test, User, 1995-05-29, test@invalid_email, 5698742685, 9528 25 Hwy, 9528 25 Hwy, Austin, Ontario, 	...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactAddTest" class="method navigator-link" hash-for-method="testAddContact(Mokthi, Magesh, 1995-05-26, mokthi@gmail.com, 5454212185, 456 Park Ave, West Palm Beach, NY, Florida...)">testAddContact(Mokthi, Magesh, 1995-05-26, mokthi@gmail.com, 5454212185, 456 Park Ave, West Palm Beach, NY, Florida...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactAddTest" class="method navigator-link" hash-for-method="testAddContact(Madhu, Mithra, 1995-05-25, madhumithra2806@gmail.com, 7845412339, 123 Main St, Dessau Rd, LA, CA, 90...)">testAddContact(Madhu, Mithra, 1995-05-25, madhumithra2806@gmail.com, 7845412339, 123 Main St, Dessau Rd, LA, CA, 90...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactAddTest" class="method navigator-link" hash-for-method="testAddContact(, Doe, 1995-05-27, doe@gmail.com, 9876543210, 12632 S Rte 59, Illinois, LA, Plainfield, 60585, Unite...)">testAddContact(, Doe, 1995-05-27, doe@gmail.com, 9876543210, 12632 S Rte 59, Illinois, LA, Plainfield, 60585, Unite...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDisplayTest" class="method navigator-link" hash-for-method="testAllEmailsValid">testAllEmailsValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDisplayTest" class="method navigator-link" hash-for-method="testContactDisplayed">testContactDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDisplayTest" class="method navigator-link" hash-for-method="testContactInfoByName">testContactInfoByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDisplayTest" class="method navigator-link" hash-for-method="testContactsSortedByName">testContactsSortedByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDeleteTest" class="method navigator-link" hash-for-method="testDeleteNonExistentContact">testDeleteNonExistentContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDeleteTest" class="method navigator-link" hash-for-method="testDeleteSingleContact">testDeleteSingleContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactEditTest" class="method navigator-link" hash-for-method="testEditContact(, Preethi, preethi@gmail.com, 8451296584, 2001/04/25, Fail)">testEditContact(, Preethi, preethi@gmail.com, 8451296584, 2001/04/25, Fail)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactEditTest" class="method navigator-link" hash-for-method="testEditContact(Princy, Sarojina, invalid.com, 78465925hu, 1995/01/25, Fail)">testEditContact(Princy, Sarojina, invalid.com, 78465925hu, 1995/01/25, Fail)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ContactDisplayTest" class="method navigator-link" hash-for-method="testPrintAllContacts">testPrintAllContacts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(Madhu, v250, v250@gmail.com, )">testSignUppage(Madhu, v250, v250@gmail.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(Madhu, Mitha, madhu2mtha@gmail.com, Madhu@123)">testSignUppage(Madhu, Mitha, madhu2mtha@gmail.com, Madhu@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(, , , )">testSignUppage(, , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(Mokthi123, MD, mokthika@gmail.com, pass)">testSignUppage(Mokthi123, MD, mokthika@gmail.com, pass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(MithaMithaMithaMithaMithaMithaMithaMithaMitha, V, mitha@gmail.com, Madhu2234)">testSignUppage(MithaMithaMithaMithaMithaMithaMithaMithaMitha, V, mitha@gmail.com, Madhu2234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(, , valid@gmail.com, Madhu@124)">testSignUppage(, , valid@gmail.com, Madhu@124)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(madhu, user, madhu@.com, Madhu@1234)">testSignUppage(madhu, user, madhu@.com, Madhu@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(M@dhu, V, madhu@gmail.com, madhuv123)">testSignUppage(M@dhu, V, madhu@gmail.com, madhuv123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.SignUpTest" class="method navigator-link" hash-for-method="testSignUppage(Mimi, Bharathi, mimibi@gmail.com, Madhu@123)">testSignUppage(Mimi, Bharathi, mimibi@gmail.com, Madhu@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(Madhu@123, madhu2mtha@gmail.com)">testValidLogin(Madhu@123, madhu2mtha@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(madhu2mtha@gmail.com, mitha@123)">testValidLogin(madhu2mtha@gmail.com, mitha@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(madhu2mtha@gmail.com, Madhu@123)">testValidLogin(madhu2mtha@gmail.com, Madhu@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(divyab@gmail.com, Madhu@123)">testValidLogin(divyab@gmail.com, Madhu@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(, )">testValidLogin(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin((&lt;script&gt;alert(&#039;Hacked&#039;)&lt;/script&gt;, (&lt;script&gt;alert(&#039;Hacked&#039;)&lt;/script&gt;)">testValidLogin((<script>alert('Hacked')</script>, (<script>alert('Hacked')</script>)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(mokthikaMD@gmail.com, mokthi@123)">testValidLogin(mokthikaMD@gmail.com, mokthi@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(madhu2mtha@gmail.com, M adhu@123)">testValidLogin(madhu2mtha@gmail.com, M adhu@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(admin&#039; --, admin&#039; --)">testValidLogin(admin' --, admin' --)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogoutTest" class="method navigator-link" hash-for-method="validLogout">validLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ContactEditTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditContact(Ragini, Dass, ragini@gmail.com, 8549657452, 1993/02/02, Success)">
+                  </a> <!-- testEditContact(Ragini, Dass, ragini@gmail.com, 8549657452, 1993/02/02, Success) -->
+                  <span class="method-name">testEditContact</span>
+                  <span class="parameters">(Ragini,Dass,ragini@gmail.com,8549657452,1993/02/02,Success)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Edit should be successful expected [true] but found [false]
+	at tests.ContactEditTest.testEditContact(ContactEditTest.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ContactDeleteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCancelDeleteContact">
+                  </a> <!-- testCancelDeleteContact -->
+                  <span class="method-name">testCancelDeleteContact</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=134.0.6998.89)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ed0b59b9fd9650a5487a4687bdd05c4, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49869/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ed0b59b9fd9650a5487a4687bdd05c4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1163)
+	at tests.ContactDeleteTest.testCancelDeleteContact(ContactDeleteTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOtherContactsUnaffected">
+                  </a> <!-- testOtherContactsUnaffected -->
+                  <span class="method-name">testOtherContactsUnaffected</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unaffected contact missing expected [true] but found [false]
+	at tests.ContactDeleteTest.testOtherContactsUnaffected(ContactDeleteTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ContactDisplayTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewAndVerifyContactList">
+                  </a> <!-- viewAndVerifyContactList -->
+                  <span class="method-name">viewAndVerifyContactList</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [viewAndVerifyContactList] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogoutwithoutLogin">
+                  </a> <!-- LogoutwithoutLogin -->
+                  <span class="method-name">LogoutwithoutLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#logout&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e25a91b08650f695f1fe5c74847de33, findElement {using=css selector, value=#logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50037}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50037/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e25a91b08650f695f1fe5c74847de33
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.LogoutPage.isLogoutVisible(LogoutPage.java:28)
+	at tests.LogoutTest.LogoutwithoutLogin(LogoutTest.java:76)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.ContactAddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddContact(Bharathi, Magesh, 1995-05-28, bharathu@gmail.com, 9546218596, 1540 S Stratford Rd, Winston-Salem, SF...)">
+                  </a> <!-- testAddContact(Bharathi, Magesh, 1995-05-28, bharathu@gmail.com, 9546218596, 1540 S Stratford Rd, Winston-Salem, SF...) -->
+                  <span class="method-name">testAddContact</span>
+                  <span class="parameters">(Bharathi,Magesh,1995-05-28,bharathu@gmail.com,9546218596,1540 S Stratford Rd,Winston-Salem,SF,North Carolina,27103,Canada,Fail(Invalid DOB Date))</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#error&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [afdd922097ccaff9d5c0b5c31182561e, findElement {using=id, value=error}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49250/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: afdd922097ccaff9d5c0b5c31182561e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getSize(Unknown Source)
+	at pages.ContactAddPage.isErrorDisplayed(ContactAddPage.java:135)
+	at tests.ContactAddTest.testAddContact(ContactAddTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddContact(Guvi, Test, 1995-05-30, mokthi@gmail.com, 1548896285, 485 R Vivi 59, TVT Road, NT, Onida, 845962, Ma...)">
+                  </a> <!-- testAddContact(Guvi, Test, 1995-05-30, mokthi@gmail.com, 1548896285, 485 R Vivi 59, TVT Road, NT, Onida, 845962, Ma...) -->
+                  <span class="method-name">testAddContact</span>
+                  <span class="parameters">(Guvi,Test,1995-05-30,mokthi@gmail.com,1548896285,485 R Vivi 59,TVT Road,NT,Onida,845962,Malaysia,Fail (Same Mail ID))</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#error&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3436a6d4f9efd3d029c9b80c48165853, findElement {using=id, value=error}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3436a6d4f9efd3d029c9b80c48165853
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.getSize(Unknown Source)
+	at pages.ContactAddPage.isErrorDisplayed(ContactAddPage.java:135)
+	at tests.ContactAddTest.testAddContact(ContactAddTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ContactEditTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditContact(, Preethi, preethi@gmail.com, 8451296584, 2001/04/25, Fail)">
+                  </a> <!-- testEditContact(, Preethi, preethi@gmail.com, 8451296584, 2001/04/25, Fail) -->
+                  <span class="method-name">testEditContact</span>
+                  <span class="parameters">(,Preethi,preethi@gmail.com,8451296584,2001/04/25,Fail)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditContact(Princy, Sarojina, invalid.com, 78465925hu, 1995/01/25, Fail)">
+                  </a> <!-- testEditContact(Princy, Sarojina, invalid.com, 78465925hu, 1995/01/25, Fail) -->
+                  <span class="method-name">testEditContact</span>
+                  <span class="parameters">(Princy,Sarojina,invalid.com,78465925hu,1995/01/25,Fail)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(Madhu, v250, v250@gmail.com, )">
+                  </a> <!-- testSignUppage(Madhu, v250, v250@gmail.com, ) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(Madhu,v250,v250@gmail.com,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(Madhu, Mitha, madhu2mtha@gmail.com, Madhu@123)">
+                  </a> <!-- testSignUppage(Madhu, Mitha, madhu2mtha@gmail.com, Madhu@123) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(Madhu,Mitha,madhu2mtha@gmail.com,Madhu@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(, , , )">
+                  </a> <!-- testSignUppage(, , , ) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(,,,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(Mokthi123, MD, mokthika@gmail.com, pass)">
+                  </a> <!-- testSignUppage(Mokthi123, MD, mokthika@gmail.com, pass) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(Mokthi123,MD,mokthika@gmail.com,pass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(MithaMithaMithaMithaMithaMithaMithaMithaMitha, V, mitha@gmail.com, Madhu2234)">
+                  </a> <!-- testSignUppage(MithaMithaMithaMithaMithaMithaMithaMithaMitha, V, mitha@gmail.com, Madhu2234) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(MithaMithaMithaMithaMithaMithaMithaMithaMitha,V,mitha@gmail.com,Madhu2234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(, , valid@gmail.com, Madhu@124)">
+                  </a> <!-- testSignUppage(, , valid@gmail.com, Madhu@124) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(,,valid@gmail.com,Madhu@124)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(madhu, user, madhu@.com, Madhu@1234)">
+                  </a> <!-- testSignUppage(madhu, user, madhu@.com, Madhu@1234) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(madhu,user,madhu@.com,Madhu@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(M@dhu, V, madhu@gmail.com, madhuv123)">
+                  </a> <!-- testSignUppage(M@dhu, V, madhu@gmail.com, madhuv123) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(M@dhu,V,madhu@gmail.com,madhuv123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUppage(Mimi, Bharathi, mimibi@gmail.com, Madhu@123)">
+                  </a> <!-- testSignUppage(Mimi, Bharathi, mimibi@gmail.com, Madhu@123) -->
+                  <span class="method-name">testSignUppage</span>
+                  <span class="parameters">(Mimi,Bharathi,mimibi@gmail.com,Madhu@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ContactDeleteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteNonExistentContact">
+                  </a> <!-- testDeleteNonExistentContact -->
+                  <span class="method-name">testDeleteNonExistentContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteSingleContact">
+                  </a> <!-- testDeleteSingleContact -->
+                  <span class="method-name">testDeleteSingleContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(Madhu@123, madhu2mtha@gmail.com)">
+                  </a> <!-- testValidLogin(Madhu@123, madhu2mtha@gmail.com) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(Madhu@123,madhu2mtha@gmail.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(madhu2mtha@gmail.com, mitha@123)">
+                  </a> <!-- testValidLogin(madhu2mtha@gmail.com, mitha@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(madhu2mtha@gmail.com,mitha@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(madhu2mtha@gmail.com, Madhu@123)">
+                  </a> <!-- testValidLogin(madhu2mtha@gmail.com, Madhu@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(madhu2mtha@gmail.com,Madhu@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(divyab@gmail.com, Madhu@123)">
+                  </a> <!-- testValidLogin(divyab@gmail.com, Madhu@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(divyab@gmail.com,Madhu@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(, )">
+                  </a> <!-- testValidLogin(, ) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin((&lt;script&gt;alert(&#039;Hacked&#039;)&lt;/script&gt;, (&lt;script&gt;alert(&#039;Hacked&#039;)&lt;/script&gt;)">
+                  </a> <!-- testValidLogin((<script>alert('Hacked')</script>, (<script>alert('Hacked')</script>) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">((<script>alert('Hacked')</script>,(<script>alert('Hacked')</script>)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(mokthikaMD@gmail.com, mokthi@123)">
+                  </a> <!-- testValidLogin(mokthikaMD@gmail.com, mokthi@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(mokthikaMD@gmail.com,mokthi@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(madhu2mtha@gmail.com, M adhu@123)">
+                  </a> <!-- testValidLogin(madhu2mtha@gmail.com, M adhu@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(madhu2mtha@gmail.com,M adhu@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(admin&#039; --, admin&#039; --)">
+                  </a> <!-- testValidLogin(admin' -, admin' -) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(admin' --,admin' --)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ContactDisplayTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAllEmailsValid">
+                  </a> <!-- testAllEmailsValid -->
+                  <span class="method-name">testAllEmailsValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactDisplayed">
+                  </a> <!-- testContactDisplayed -->
+                  <span class="method-name">testContactDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactInfoByName">
+                  </a> <!-- testContactInfoByName -->
+                  <span class="method-name">testContactInfoByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContactsSortedByName">
+                  </a> <!-- testContactsSortedByName -->
+                  <span class="method-name">testContactsSortedByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPrintAllContacts">
+                  </a> <!-- testPrintAllContacts -->
+                  <span class="method-name">testPrintAllContacts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="backButtonAfterLogout">
+                  </a> <!-- backButtonAfterLogout -->
+                  <span class="method-name">backButtonAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutBtnVisible">
+                  </a> <!-- logoutBtnVisible -->
+                  <span class="method-name">logoutBtnVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="refreshAfterLogout">
+                  </a> <!-- refreshAfterLogout -->
+                  <span class="method-name">refreshAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogout">
+                  </a> <!-- validLogout -->
+                  <span class="method-name">validLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ContactAddTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddContact(Test, User, 1995-05-29, test@invalid_email, 5698742685, 9528 25 Hwy, 9528 25 Hwy, Austin, Ontario, 	...)">
+                  </a> <!-- testAddContact(Test, User, 1995-05-29, test@invalid_email, 5698742685, 9528 25 Hwy, 9528 25 Hwy, Austin, Ontario, 	...) -->
+                  <span class="method-name">testAddContact</span>
+                  <span class="parameters">(Test,User,1995-05-29,test@invalid_email,5698742685,9528 25 Hwy,9528 25 Hwy,Austin,Ontario,	L9T 2X7,Italy,Fail (Invalid Email))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddContact(Mokthi, Magesh, 1995-05-26, mokthi@gmail.com, 5454212185, 456 Park Ave, West Palm Beach, NY, Florida...)">
+                  </a> <!-- testAddContact(Mokthi, Magesh, 1995-05-26, mokthi@gmail.com, 5454212185, 456 Park Ave, West Palm Beach, NY, Florida...) -->
+                  <span class="method-name">testAddContact</span>
+                  <span class="parameters">(Mokthi,Magesh,1995-05-26,mokthi@gmail.com,5454212185,456 Park Ave,West Palm Beach,NY,Florida,45879,United Kingdom,Success)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddContact(Madhu, Mithra, 1995-05-25, madhumithra2806@gmail.com, 7845412339, 123 Main St, Dessau Rd, LA, CA, 90...)">
+                  </a> <!-- testAddContact(Madhu, Mithra, 1995-05-25, madhumithra2806@gmail.com, 7845412339, 123 Main St, Dessau Rd, LA, CA, 90...) -->
+                  <span class="method-name">testAddContact</span>
+                  <span class="parameters">(Madhu,Mithra,1995-05-25,madhumithra2806@gmail.com,7845412339,123 Main St,Dessau Rd,LA,CA,90001,Germany,Success)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddContact(, Doe, 1995-05-27, doe@gmail.com, 9876543210, 12632 S Rte 59, Illinois, LA, Plainfield, 60585, Unite...)">
+                  </a> <!-- testAddContact(, Doe, 1995-05-27, doe@gmail.com, 9876543210, 12632 S Rte 59, Illinois, LA, Plainfield, 60585, Unite...) -->
+                  <span class="method-name">testAddContact</span>
+                  <span class="parameters">(,Doe,1995-05-27,doe@gmail.com,9876543210,12632 S Rte 59,Illinois,LA,Plainfield,60585,United States,Fail(Missing FirstName))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\madhu\eclipse-workspace\Mini_Project2\testng1.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://thinking-tester-contact-list.herokuapp.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilis.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.SignUpTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.ContactAddTest&quot;/&gt;
+      &lt;class name=&quot;tests.ContactDisplayTest&quot;/&gt;
+      &lt;class name=&quot;tests.ContactEditTest&quot;/&gt;
+      &lt;class name=&quot;tests.ContactDeleteTest&quot;/&gt;
+      &lt;class name=&quot;tests.LogoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(42);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAddContact')
+data.setCell(0, 2, 'tests.ContactAddTest')
+data.setCell(0, 3, 19374);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddContact')
+data.setCell(1, 2, 'tests.ContactAddTest')
+data.setCell(1, 3, 19010);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAllEmailsValid')
+data.setCell(2, 2, 'tests.ContactDisplayTest')
+data.setCell(2, 3, 10658);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAddContact')
+data.setCell(3, 2, 'tests.ContactAddTest')
+data.setCell(3, 3, 10204);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeleteNonExistentContact')
+data.setCell(4, 2, 'tests.ContactDeleteTest')
+data.setCell(4, 3, 10041);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testOtherContactsUnaffected')
+data.setCell(5, 2, 'tests.ContactDeleteTest')
+data.setCell(5, 3, 10040);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LogoutwithoutLogin')
+data.setCell(6, 2, 'tests.LogoutTest')
+data.setCell(6, 3, 10017);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testAddContact')
+data.setCell(7, 2, 'tests.ContactAddTest')
+data.setCell(7, 3, 9966);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testAddContact')
+data.setCell(8, 2, 'tests.ContactAddTest')
+data.setCell(8, 3, 9749);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testAddContact')
+data.setCell(9, 2, 'tests.ContactAddTest')
+data.setCell(9, 3, 9617);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDeleteSingleContact')
+data.setCell(10, 2, 'tests.ContactDeleteTest')
+data.setCell(10, 3, 8498);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCancelDeleteContact')
+data.setCell(11, 2, 'tests.ContactDeleteTest')
+data.setCell(11, 3, 8358);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSignUppage')
+data.setCell(12, 2, 'tests.SignUpTest')
+data.setCell(12, 3, 6613);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSignUppage')
+data.setCell(13, 2, 'tests.SignUpTest')
+data.setCell(13, 3, 6593);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSignUppage')
+data.setCell(14, 2, 'tests.SignUpTest')
+data.setCell(14, 3, 6543);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testSignUppage')
+data.setCell(15, 2, 'tests.SignUpTest')
+data.setCell(15, 3, 6530);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testContactDisplayed')
+data.setCell(16, 2, 'tests.ContactDisplayTest')
+data.setCell(16, 3, 6507);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testSignUppage')
+data.setCell(17, 2, 'tests.SignUpTest')
+data.setCell(17, 3, 6504);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSignUppage')
+data.setCell(18, 2, 'tests.SignUpTest')
+data.setCell(18, 3, 6499);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testSignUppage')
+data.setCell(19, 2, 'tests.SignUpTest')
+data.setCell(19, 3, 6483);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testSignUppage')
+data.setCell(20, 2, 'tests.SignUpTest')
+data.setCell(20, 3, 6388);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testSignUppage')
+data.setCell(21, 2, 'tests.SignUpTest')
+data.setCell(21, 3, 6297);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testValidLogin')
+data.setCell(22, 2, 'tests.LoginTest')
+data.setCell(22, 3, 5991);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testValidLogin')
+data.setCell(23, 2, 'tests.LoginTest')
+data.setCell(23, 3, 5829);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testValidLogin')
+data.setCell(24, 2, 'tests.LoginTest')
+data.setCell(24, 3, 5724);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testValidLogin')
+data.setCell(25, 2, 'tests.LoginTest')
+data.setCell(25, 3, 5681);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testValidLogin')
+data.setCell(26, 2, 'tests.LoginTest')
+data.setCell(26, 3, 5678);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testValidLogin')
+data.setCell(27, 2, 'tests.LoginTest')
+data.setCell(27, 3, 5665);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testValidLogin')
+data.setCell(28, 2, 'tests.LoginTest')
+data.setCell(28, 3, 5644);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testValidLogin')
+data.setCell(29, 2, 'tests.LoginTest')
+data.setCell(29, 3, 5617);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testValidLogin')
+data.setCell(30, 2, 'tests.LoginTest')
+data.setCell(30, 3, 5582);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testEditContact')
+data.setCell(31, 2, 'tests.ContactEditTest')
+data.setCell(31, 3, 4414);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testEditContact')
+data.setCell(32, 2, 'tests.ContactEditTest')
+data.setCell(32, 3, 4336);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testEditContact')
+data.setCell(33, 2, 'tests.ContactEditTest')
+data.setCell(33, 3, 4332);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'validLogout')
+data.setCell(34, 2, 'tests.LogoutTest')
+data.setCell(34, 3, 4097);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'refreshAfterLogout')
+data.setCell(35, 2, 'tests.LogoutTest')
+data.setCell(35, 3, 2402);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'backButtonAfterLogout')
+data.setCell(36, 2, 'tests.LogoutTest')
+data.setCell(36, 3, 1960);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testPrintAllContacts')
+data.setCell(37, 2, 'tests.ContactDisplayTest')
+data.setCell(37, 3, 1905);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testContactInfoByName')
+data.setCell(38, 2, 'tests.ContactDisplayTest')
+data.setCell(38, 3, 1769);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testContactsSortedByName')
+data.setCell(39, 2, 'tests.ContactDisplayTest')
+data.setCell(39, 3, 1555);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'logoutBtnVisible')
+data.setCell(40, 2, 'tests.LogoutTest')
+data.setCell(40, 3, 1339);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'viewAndVerifyContactList')
+data.setCell(41, 2, 'tests.ContactDisplayTest')
+data.setCell(41, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ContactEditTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ContactDeleteTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ContactDisplayTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LogoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ContactAddTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">reportClose</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactAddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">631 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactDeleteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">632 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactDisplayTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">634 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactEditTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">635 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">702 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">704 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupTestDetails</span>
+                <span class="method-start">704 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">753 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">2256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(Mimi, Bharathi, mimibi@gmail.com, Madhu@123)</span>
+                <span class="method-start">7361 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">13959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">14444 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">14812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(Mokthi123, MD, mokthika@gmail.com, pass)</span>
+                <span class="method-start">18841 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">25386 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">25922 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">26240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(M@dhu, V, madhu@gmail.com, madhuv123)</span>
+                <span class="method-start">30010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">36542 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">37023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">37332 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(MithaMithaMithaMithaMithaMithaMithaMithaMitha, V, mitha@gmail.com, Madhu2234)</span>
+                <span class="method-start">41235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">47850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">48371 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">48710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(madhu, user, madhu@.com, Madhu@1234)</span>
+                <span class="method-start">52585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">59070 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">59595 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">59891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(Madhu, Mitha, madhu2mtha@gmail.com, Madhu@123)</span>
+                <span class="method-start">63726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">70227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">70739 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">71038 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(, , valid@gmail.com, Madhu@124)</span>
+                <span class="method-start">75030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">81421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">81916 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">82240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(Madhu, v250, v250@gmail.com, )</span>
+                <span class="method-start">86112 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">92620 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">93113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">93389 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUppage(, , , )</span>
+                <span class="method-start">97129 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">103429 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">103929 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">104204 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">104340 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(madhu2mtha@gmail.com, Madhu@123)</span>
+                <span class="method-start">108103 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">113749 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">114023 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(divyab@gmail.com, Madhu@123)</span>
+                <span class="method-start">117650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">123235 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">123538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(madhu2mtha@gmail.com, mitha@123)</span>
+                <span class="method-start">127409 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">133134 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">133463 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(mokthikaMD@gmail.com, mokthi@123)</span>
+                <span class="method-start">137455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">143135 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">143396 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(Madhu@123, madhu2mtha@gmail.com)</span>
+                <span class="method-start">147551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">153383 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">153697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(, )</span>
+                <span class="method-start">157563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">163181 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">163433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin((<script>alert('Hacked')</script>, (<script>alert('Hacked')</script>)</span>
+                <span class="method-start">167476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">173471 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">173779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(madhu2mtha@gmail.com, M adhu@123)</span>
+                <span class="method-start">177685 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">183368 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">183649 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(admin' --, admin' --)</span>
+                <span class="method-start">187351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">193018 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactAddTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">193325 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">193460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddContact(Madhu, Mithra, 1995-05-25, madhumithra2806@gmail.com, 7845412339, 123 Main St, Dessau Rd, LA, CA, 90...)</span>
+                <span class="method-start">197462 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">207213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">207582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddContact(Mokthi, Magesh, 1995-05-26, mokthi@gmail.com, 5454212185, 456 Park Ave, West Palm Beach, NY, Florida...)</span>
+                <span class="method-start">211373 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">221579 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">221916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddContact(, Doe, 1995-05-27, doe@gmail.com, 9876543210, 12632 S Rte 59, Illinois, LA, Plainfield, 60585, Unite...)</span>
+                <span class="method-start">225682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">235649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">236724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddContact(Bharathi, Magesh, 1995-05-28, bharathu@gmail.com, 9546218596, 1540 S Stratford Rd, Winston-Salem, SF...)</span>
+                <span class="method-start">240570 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">259950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">260366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddContact(Test, User, 1995-05-29, test@invalid_email, 5698742685, 9528 25 Hwy, 9528 25 Hwy, Austin, Ontario, 	...)</span>
+                <span class="method-start">264133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">273754 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">274100 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddContact(Guvi, Test, 1995-05-30, mokthi@gmail.com, 1548896285, 485 R Vivi 59, TVT Road, NT, Onida, 845962, Ma...)</span>
+                <span class="method-start">278160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">297173 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactDisplayTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">297528 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">297531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPrintAllContacts</span>
+                <span class="method-start">301382 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">303288 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">303531 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testContactDisplayed</span>
+                <span class="method-start">307568 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">314077 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">314360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testContactInfoByName</span>
+                <span class="method-start">318213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">319983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">320315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testContactsSortedByName</span>
+                <span class="method-start">324217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">325774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">326044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAllEmailsValid</span>
+                <span class="method-start">330474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">341134 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactEditTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">341831 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">341922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEditContact(Ragini, Dass, ragini@gmail.com, 8549657452, 1993/02/02, Success)</span>
+                <span class="method-start">345755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">350093 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">350363 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditContact(Princy, Sarojina, invalid.com, 78465925hu, 1995/01/25, Fail)</span>
+                <span class="method-start">354655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">359071 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">359318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditContact(, Preethi, preethi@gmail.com, 8451296584, 2001/04/25, Fail)</span>
+                <span class="method-start">363138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">367470 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ContactDeleteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">367748 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">367750 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteSingleContact</span>
+                <span class="method-start">372498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">380997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">381904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCancelDeleteContact</span>
+                <span class="method-start">385643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">394004 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">395104 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteNonExistentContact</span>
+                <span class="method-start">398844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">408887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">409870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testOtherContactsUnaffected</span>
+                <span class="method-start">413683 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">423725 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">424031 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">424033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutBtnVisible</span>
+                <span class="method-start">428032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">429372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">429697 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLogout</span>
+                <span class="method-start">433875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">437974 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">438308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">backButtonAfterLogout</span>
+                <span class="method-start">442198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">444159 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">444468 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LogoutwithoutLogin</span>
+                <span class="method-start">448152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">458172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">460055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">refreshAfterLogout</span>
+                <span class="method-start">463774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserquit</span>
+                <span class="method-start">466179 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">reportClose</span>
+                <span class="method-start">466573 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
