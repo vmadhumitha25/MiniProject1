@@ -1,0 +1,759 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 17 00:43:17 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>877 seconds (877698 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: @madhu*&%, Madhu@123, Special Character Invalid</td>
+<td><div><pre>java.lang.AssertionError: Signup test failed! expected [Special Character Invalid] but found [This user already exist.]
+	at tests.SignUpTest.testSignUppageMultipleData(SignUpTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406324738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406324738'><pre>java.lang.AssertionError: Signup test failed! expected [Special Character Invalid] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at tests.SignUpTest.testSignUppageMultipleData(SignUpTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: Madhu_with_very_long_Mitha _exceeding_limit, Madhu2345, Sign up successful.</td>
+<td><div><pre>java.lang.AssertionError: Signup test failed! expected [Sign up successful.] but found [This user already exist.]
+	at tests.SignUpTest.testSignUppageMultipleData(SignUpTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace593271165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace593271165'><pre>java.lang.AssertionError: Signup test failed! expected [Sign up successful.] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at tests.SignUpTest.testSignUppageMultipleData(SignUpTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.ProductPageTest.testProductDetails()'><b>testProductDetails</b><br>Test class: tests.ProductPageTest</td>
+<td><div><pre>java.lang.AssertionError: Product Description does not match expected [Product description
+The Samsung Galaxy S6 is powered by 1.5GHz octa-core Samsung Exynos 7420 processor and it comes with 3GB of RAM. The phone packs 32GB of internal storage cannot be expanded.] but found [true]
+	at tests.ProductPageTest.testProductDetails(ProductPageTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1296845588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1296845588'><pre>java.lang.AssertionError: Product Description does not match expected [Product description
+The Samsung Galaxy S6 is powered by 1.5GHz octa-core Samsung Exynos 7420 processor and it comes with 3GB of RAM. The phone packs 32GB of internal storage cannot be expanded.] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at tests.ProductPageTest.testProductDetails(ProductPageTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>17</td>
+<td>tests.ProductPageTest@6f01b95f</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: MadhuVMadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV MadhuV  , Madhu@123, User does not exist.</td>
+<td><div><pre>java.lang.AssertionError: Alert message doesn&apos;t match expected. expected [true] but found [false]
+	at tests.LoginTest.testLogin(LoginTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1081126121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1081126121'><pre>java.lang.AssertionError: Alert message doesn&apos;t match expected. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.LoginTest.testLogin(LoginTest.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>6</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: Madhu Mami V, Madhu@123, Sign up successful.</td>
+<td><div><pre>java.lang.AssertionError: Signup test failed! expected [Sign up successful.] but found [This user already exist.]
+	at tests.SignUpTest.testSignUppageMultipleData(SignUpTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1808584758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808584758'><pre>java.lang.AssertionError: Signup test failed! expected [Sign up successful.] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at tests.SignUpTest.testSignUppageMultipleData(SignUpTest.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.ProductPageTest.testAddToCartWithoutLogin()'><b>testAddToCartWithoutLogin</b><br>Test class: tests.ProductPageTest</td>
+<td><div><pre>java.lang.AssertionError: Alert for unauthenticated add to cart not shown expected [true] but found [false]
+	at tests.ProductPageTest.testAddToCartWithoutLogin(ProductPageTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2055962129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2055962129'><pre>java.lang.AssertionError: Alert for unauthenticated add to cart not shown expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.ProductPageTest.testAddToCartWithoutLogin(ProductPageTest.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>3</td>
+<td>tests.ProductPageTest@6f01b95f</td></tr>
+<tr>
+<td title='tests.CartTest.proceedWithoutItems()'><b>proceedWithoutItems</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.ClassCastException: class jdk.proxy2.$Proxy19 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy19 is in module jdk.proxy2 of loader &apos;app&apos;; org.openqa.selenium.By is in unnamed module of loader &apos;app&apos;)
+	at pages.CartPage.isPlaceOrderEnabled(CartPage.java:79)
+	at tests.CartTest.proceedWithoutItems(CartTest.java:183)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069810575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069810575'><pre>java.lang.ClassCastException: class jdk.proxy2.$Proxy19 cannot be cast to class org.openqa.selenium.By (jdk.proxy2.$Proxy19 is in module jdk.proxy2 of loader &apos;app&apos;; org.openqa.selenium.By is in unnamed module of loader &apos;app&apos;)
+	at pages.CartPage.isPlaceOrderEnabled(CartPage.java:79)
+	at tests.CartTest.proceedWithoutItems(CartTest.java:183)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>13</td>
+<td>tests.CartTest@6cc4cdb9</td></tr>
+<tr>
+<td title='tests.LoginTest.verifySignupModalOpens()'><b>verifySignupModalOpens</b><br>Test class: tests.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: Login modal did not open. expected [true] but found [false]
+	at tests.LoginTest.verifySignupModalOpens(LoginTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1529580934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1529580934'><pre>java.lang.AssertionError: Login modal did not open. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.LoginTest.verifySignupModalOpens(LoginTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.CheckoutTest.testCheckoutWithoutAddingItemsFails()'><b>testCheckoutWithoutAddingItemsFails</b><br>Test class: tests.CheckoutTest</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b8911c3be1063baceb4bfcca8de90ef, clickElement {id=f.A8A10EE0D881FD05C5AAB65DFB277BB2.d.E159456AD008E366CB1FB404C9C231BA.e.98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60322/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1b8911c3be1063baceb4bfcca8de90ef)] -&gt; id: cartur]
+Session ID: 1b8911c3be1063baceb4bfcca8de90ef
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.CartPage.goToCartButton(CartPage.java:54)
+	at tests.CheckoutTest.testCheckoutWithoutAddingItemsFails(CheckoutTest.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904349935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904349935'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b8911c3be1063baceb4bfcca8de90ef, clickElement {id=f.A8A10EE0D881FD05C5AAB65DFB277BB2.d.E159456AD008E366CB1FB404C9C231BA.e.98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\madhu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60322/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1b8911c3be1063baceb4bfcca8de90ef)] -&gt; id: cartur]
+Session ID: 1b8911c3be1063baceb4bfcca8de90ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pages.CartPage.goToCartButton(CartPage.java:54)
+	at tests.CheckoutTest.testCheckoutWithoutAddingItemsFails(CheckoutTest.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.CartTest.testAddToCartWithoutLogin()'><b>testAddToCartWithoutLogin</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.AssertionError: Expected login alert expected [true] but found [false]
+	at tests.CartTest.testAddToCartWithoutLogin(CartTest.java:201)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace719119378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace719119378'><pre>java.lang.AssertionError: Expected login alert expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.CartTest.testAddToCartWithoutLogin(CartTest.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>tests.CartTest@6cc4cdb9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CheckoutTest.confirmPurchaseTest()'><b>confirmPurchaseTest</b><br>Test class: tests.CheckoutTest<br>Parameters: Madhu Mitha, India, Chennai, abcd123, 4, 2025, success</td>
+<td></td>
+<td>23</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.LogoutTest.logoutBtnVisible()'><b>logoutBtnVisible</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>10</td>
+<td>tests.LogoutTest@7f2cfe3f</td></tr>
+<tr>
+<td title='tests.CheckoutTest.confirmPurchaseTest()'><b>confirmPurchaseTest</b><br>Test class: tests.CheckoutTest<br>Parameters: Madhu, USA, Boston, 6118111191111110, 12, 2025, success</td>
+<td></td>
+<td>24</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginButtonVisibile()'><b>verifyLoginButtonVisibile</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: , Madhu@123, Please fill out Username and Password.</td>
+<td></td>
+<td>6</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.CartTest.clearCartItem()'><b>clearCartItem</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>40</td>
+<td>tests.CartTest@6cc4cdb9</td></tr>
+<tr>
+<td title='tests.LogoutTest.validLogout()'><b>validLogout</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>11</td>
+<td>tests.LogoutTest@7f2cfe3f</td></tr>
+<tr>
+<td title='tests.HomePageTest.testHomePageElements()'><b>testHomePageElements</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>15</td>
+<td>tests.HomePageTest@5c80cf32</td></tr>
+<tr>
+<td title='tests.CartTest.totalPriceCalculation()'><b>totalPriceCalculation</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>36</td>
+<td>tests.CartTest@6cc4cdb9</td></tr>
+<tr>
+<td title='tests.ProductPageTest.testProductDetailsDisplayed()'><b>testProductDetailsDisplayed</b><br>Test class: tests.ProductPageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ProductPageTest@6f01b95f</td></tr>
+<tr>
+<td title='tests.LogoutTest.LogoutwithoutLogin()'><b>LogoutwithoutLogin</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogoutTest@7f2cfe3f</td></tr>
+<tr>
+<td title='tests.LogoutTest.accessCartMenu()'><b>accessCartMenu</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>13</td>
+<td>tests.LogoutTest@7f2cfe3f</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: MadhuV, wrongPass, Wrong password.</td>
+<td></td>
+<td>6</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: MadhuV, Madhu@123, success</td>
+<td></td>
+<td>2</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.CheckoutTest.confirmPurchaseTest()'><b>confirmPurchaseTest</b><br>Test class: tests.CheckoutTest<br>Parameters: Mokthika, India, , 123456789012, , , success</td>
+<td></td>
+<td>33</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.SignUpTest.verifySignupModalOpens()'><b>verifySignupModalOpens</b><br>Test class: tests.SignUpTest</td>
+<td></td>
+<td>5</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.SignUpTest.verifySignupButtonVisibility()'><b>verifySignupButtonVisibility</b><br>Test class: tests.SignUpTest</td>
+<td></td>
+<td>5</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.ProductPageTest.verifyBackToHomeFunctionality()'><b>verifyBackToHomeFunctionality</b><br>Test class: tests.ProductPageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ProductPageTest@6f01b95f</td></tr>
+<tr>
+<td title='tests.CheckoutTest.confirmPurchaseTest()'><b>confirmPurchaseTest</b><br>Test class: tests.CheckoutTest<br>Parameters: Mitha, UK, London, 5500000000000000, 8, 2023, success</td>
+<td></td>
+<td>24</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: , , Please fill out Username and Password.</td>
+<td></td>
+<td>6</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.HomePageTest.testWelcomeTextMismatch()'><b>testWelcomeTextMismatch</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>tests.HomePageTest@5c80cf32</td></tr>
+<tr>
+<td title='tests.ProductPageTest.testAddToCartAfterLogin()'><b>testAddToCartAfterLogin</b><br>Test class: tests.ProductPageTest</td>
+<td></td>
+<td>9</td>
+<td>tests.ProductPageTest@6f01b95f</td></tr>
+<tr>
+<td title='tests.HomePageTest.printAllHomePageTexts()'><b>printAllHomePageTexts</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>7</td>
+<td>tests.HomePageTest@5c80cf32</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: invaliMadhu, Madhu@123, User does not exist.</td>
+<td></td>
+<td>7</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+<tr>
+<td title='tests.LogoutTest.testMultipleLogouts()'><b>testMultipleLogouts</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>18</td>
+<td>tests.LogoutTest@7f2cfe3f</td></tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: , , Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.CheckoutTest.confirmPurchaseTest()'><b>confirmPurchaseTest</b><br>Test class: tests.CheckoutTest<br>Parameters: , India, Chennai, 1234570000000000, 4, 2025, Please fill out Name and Creditcard.</td>
+<td></td>
+<td>22</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: Madhumitha, Madhu@1234, This user already exist.</td>
+<td></td>
+<td>1</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.CheckoutTest.placeOrderModalOpens()'><b>placeOrderModalOpens</b><br>Test class: tests.CheckoutTest</td>
+<td></td>
+<td>19</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.CheckoutTest.confirmPurchaseTest()'><b>confirmPurchaseTest</b><br>Test class: tests.CheckoutTest<br>Parameters: , , , , , , Please fill out Name and Creditcard.</td>
+<td></td>
+<td>24</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: , Pass#234, Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.CartTest.testAddToCart()'><b>testAddToCart</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>12</td>
+<td>tests.CartTest@6cc4cdb9</td></tr>
+<tr>
+<td title='tests.CheckoutTest.checkOutFieldPresent()'><b>checkOutFieldPresent</b><br>Test class: tests.CheckoutTest</td>
+<td></td>
+<td>23</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.CartTest.removeItemFromCart()'><b>removeItemFromCart</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>58</td>
+<td>tests.CartTest@6cc4cdb9</td></tr>
+<tr>
+<td title='tests.LogoutTest.sessionclearAfterLogout()'><b>sessionclearAfterLogout</b><br>Test class: tests.LogoutTest</td>
+<td></td>
+<td>7</td>
+<td>tests.LogoutTest@7f2cfe3f</td></tr>
+<tr>
+<td title='tests.HomePageTest.testWelcomeUsernameDisplayed()'><b>testWelcomeUsernameDisplayed</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>tests.HomePageTest@5c80cf32</td></tr>
+<tr>
+<td title='tests.SignUpTest.testSignUppageMultipleData()'><b>testSignUppageMultipleData</b><br>Test class: tests.SignUpTest<br>Parameters: Madhu, , Please fill out Username and Password.</td>
+<td></td>
+<td>1</td>
+<td>tests.SignUpTest@70cf32e3</td></tr>
+<tr>
+<td title='tests.CheckoutTest.emptyFieldPurchase()'><b>emptyFieldPurchase</b><br>Test class: tests.CheckoutTest</td>
+<td></td>
+<td>47</td>
+<td>tests.CheckoutTest@28194a50</td></tr>
+<tr>
+<td title='tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTest<br>Parameters: ' OR '1'='1, ' OR '1'='1, Wrong password.</td>
+<td></td>
+<td>6</td>
+<td>tests.LoginTest@6f53b8a</td></tr>
+</table><p>
+</body>
+</html>
